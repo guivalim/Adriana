@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.TelaVerObjetoEspecificoController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="80.0" prefWidth="578.0">
+         <children>
+            <Label fx:id="titulo" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="0.0" prefWidth="0.0" text="Ver Objeto" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="voltarTelaVisualizacao" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" onAction="#voltarTelaAnterior" text="Voltar" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="13.0" layoutY="130.0" prefHeight="262.0" prefWidth="572.0">
+         <children>
+            <HBox layoutX="186.0" layoutY="52.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox prefHeight="278.0" prefWidth="573.0">
+                     <children>
+                        <Label fx:id="info1" contentDisplay="CENTER" prefHeight="54.0" prefWidth="575.0" text="info">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="info2" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="575.0" text="info">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="info3" contentDisplay="CENTER" layoutX="10.0" layoutY="64.0" prefHeight="54.0" prefWidth="575.0" text="info">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="info4" contentDisplay="CENTER" layoutX="10.0" layoutY="119.0" prefHeight="54.0" prefWidth="575.0" text="info">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="61.0" prefWidth="572.0">
+                           <children>
+                              <Button fx:id="bnt_editar_objeto" mnemonicParsing="false" onAction="#editarObjeto" prefHeight="35.0" prefWidth="88.0" text="Editar">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                              <Separator orientation="VERTICAL" prefHeight="58.0" prefWidth="43.0" visible="false" />
+                              <Button fx:id="bnt_excluir_objeto" layoutX="231.0" layoutY="21.0" mnemonicParsing="false" onAction="#excluirObjeto" prefHeight="35.0" prefWidth="88.0" text="Excluir" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="-6.0" layoutY="87.0" prefHeight="6.0" prefWidth="612.0" />
+   </children>
+</AnchorPane>
