@@ -164,7 +164,7 @@
                 titulo.setText("Estrela");
                 info1.setText("Nome: " + estrela.getNome());
                 info2.setText("Cor: " + estrela.getCor());
-                info3.setText("Tamanho: " + estrela.getTamanho());
+                info3.setText("Tamanho: " + estrela.getTamanho() + " Km");
                 info4.setText("Distância da Terra: " + estrela.getDistTerra() + " Ly");
 
             }
